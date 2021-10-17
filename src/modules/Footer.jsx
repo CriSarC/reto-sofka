@@ -1,30 +1,25 @@
 import React, { Component } from 'react';
-
 import '../css/style.css';
 import { Modal_Me } from './../common/components/Modal_Me';
-
-
 
 export const Footer = () => {
     const handleClickInfo = async () => {
         console.log('me presionaron')
-
     }
     return (
         <>
-
             <footer>
                 <nav className="navbar navbar-expand-lg navbar-light">
                     <div className="container-fluid">
                         <div className="container">
                             <div className="row">
                                 <div    className="col-8" 
-                                        style={{textAlign: "end"}}>
-                                   
+                                        style={{fontSize: "30px"}}>
+                                    <p>Cristian Sarmiento:&nbsp;&nbsp;sarmientocastrocris@gmail.com</p>
                                 </div>
                                 <div className="col-1"></div>
                                 <div    className="col-3 " 
-                                        style={{textAlign: "end"}}>
+                                        style={{textAlign: "end"}}>       
                                     <div className="collapse navbar-collapse" id="navbarNav">
                                         <ul className="navbar-nav">
                                             <li className="nav-item">
@@ -47,9 +42,7 @@ export const Footer = () => {
                     </div>
                 </nav>
             </footer>
-
            <Modal_Me/>
-
         </>
     )
 }

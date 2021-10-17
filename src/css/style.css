@@ -59,7 +59,7 @@ header{
 }
 
 footer{
-    background-color: rgba(233, 210, 109, 0.431);
+    background-color: rgba(233, 210, 109, 0.534);
     width: 100%;
     margin: auto;
     display: block;
@@ -78,7 +78,7 @@ footer{
 }
 
 .fomr-mod-user{
-    background-color: #26327e;
+    background-color: #7e5f26;
     margin-bottom: 60px;
 }
 
@@ -98,7 +98,7 @@ footer{
 }
 
 .headerNg{
-    background-color: #26327e; 
+    background-color: #9e752885; 
     color: white; 
     text-align: center;
 }
@@ -106,6 +106,14 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    /* margin:30px; */
+  }
+  .buton-center {
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin:30px; */
   }
 
   form{
@@ -145,6 +153,7 @@ footer{
  .btnLogin{
   width: 100%; 
   margin-top: 10px;
+  
  }
 
  /* ul{
