@@ -16,21 +16,18 @@ export const Menu = ({ titulo }) => {
 
             <nav className="navbar navbar-expand-lg navbar-dark bg-color " id="menu">
                 <div className="container-fluid">
-                    <div>
-                        <NavLink exact to='/' activeClassName="btn btn-warning active">
+                    <div className="col-6">
+                        <NavLink exact to='/' className="btn btn-warning buton-menu" >
                             Juega!
+                            
                         </NavLink>
                     </div>
-                    <div>
-                        <NavLink exact to='/Puntajes' activeClassName="btn btn-warning active">
+                    <div className="col-6">
+                        <NavLink exact to='/Puntajes' className="btn btn-warning buton-menu" >
                             Puntajes
                         </NavLink>
                     </div>
-                    <div className="col-12 text-aling-end">
-                        <a className="navbar-brand menuNG-titulo font-size-25px">
-                            {titulo}&nbsp;&nbsp; <i className="fas  font-size-50px"></i>
-                        </a>
-                    </div>
+                   
                 </div>
             </nav>
 

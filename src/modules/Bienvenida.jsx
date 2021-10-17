@@ -1,13 +1,13 @@
-import React, { Component }  from 'react';
+import React, { Component } from 'react';
 
 import './../css/style.css';
+import { Menu } from './Menu'
 
 export const Bienvenida = () => {
-    const handleOnClickLogin = async () => {
- 
-    }
+    
+    
     return (
-        <>
+        <>          
             <div className="container abs-center" >
                 <div className="row rounded justify-content-med-center paddingcentro">
                     <div className="col">
@@ -19,7 +19,7 @@ export const Bienvenida = () => {
                         <div className="row text-center">
                             <h6>Ingresa por medio de Gmail</h6>
                         </div>
-                       
+
                     </div>
                 </div>
             </div>

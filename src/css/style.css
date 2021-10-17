@@ -22,13 +22,13 @@ size: 9x;
  }
 
 .color{
-    background-color: #060b73;
-    border-color: #060b73;
+    background-color: #b1722b67;
+    border-color: #8f722365;
 }
 
 .bg-color{
-    background: rgb(6,11,115);
-    background: linear-gradient(180deg, rgba(6,11,115,1) 0%, rgba(6,11,115,0.5) 100%);
+    background: rgba(115, 71, 6, 0.623);
+    background: linear-gradient(180deg, rgba(190, 141, 34, 0.212) 0%rgba(163, 129, 18, 0.185)5) 100%;
 }
 
 div.capa{
@@ -45,10 +45,7 @@ div.capa{
     color: white;
 }
 
-.fuente_Mercurio{
-    font-family: Aldrich, sans-serif ;
-    
-}
+
 header{
     width: 90%;
     /* max-width: 1000px; */
@@ -62,7 +59,7 @@ header{
 }
 
 footer{
-    background-color: rgba(238, 230, 230, 0.58);
+    background-color: rgba(233, 210, 109, 0.431);
     width: 100%;
     margin: auto;
     display: block;
@@ -168,7 +165,13 @@ footer{
   font-size: 1.5rem;
   } */
   
-  .active{
+/*   .active{
     background-color: darksalmon;
     color:beige;
+  } */
+
+  .buton-menu{
+      margin:20px;
+      margin-left:100px;
+      width: 50%; 
   }
