@@ -4,29 +4,24 @@ import {
   Route,
   Switch
 } from 'react-router-dom'
-import { Persona } from '../components/Persona'
-import { Contacto } from '../components/Contacto';
-import { Home } from '../components/Home';
-import { PageNotFound } from '../components/PageNotFound';
-import { Navbar } from '../components/Navbar';
-import { ListaUsuarios } from '../components/ListaUsuarios';
-import { Usuario } from '../components/Usuario';
+import { Bienvenida } from '../modules/Bienvenida'
+import {Menu} from '../modules/Menu'
+import {Footer} from '../modules/Footer'
+import {Puntajes} from '../modules/Puntaje_jugador'
 
 export const AppRouter = () => {
   return (
     <>
-      <h1>App Router</h1>
-
+     
       <Router>
-        <Navbar />
+        <Menu />
         <Switch>
-          <Route path="/lista-usuarios/:id" component={Usuario} />
-          <Route path="/lista-usuarios" component={ListaUsuarios} />
-          <Route path="/persona" component={Persona} />
-          <Route path="/contacto" component={Contacto} />
-          <Route exact path="/" component={Home} />
-          <Route path="*" component={PageNotFound} />
+          <Route path="/Puntajes" component={Puntajes} />
+          <Route path="/" component={Bienvenida} />
+
+          
         </Switch>
+        <Footer/>
       </Router>
 
     </>

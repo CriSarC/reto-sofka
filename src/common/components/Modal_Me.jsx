@@ -8,7 +8,7 @@ export const Modal_Me = () => {
             <div className="modal-dialog modal-dialog-centered">
             <div className="modal-content">
                 <div className="modal-header headerNg" >
-                    <h5 className="modal-dialog modal-dialog-centered" >Acerca de mi :</h5>
+                    <h5 className="modal-dialog modal-dialog-centered" ></h5>
                     <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div className="modal-body">

@@ -1,12 +1,15 @@
-import React, { Component }  from 'react';
+import React, { Component } from 'react';
 
 import '../css/style.css';
-import {Modal_Me} from './../common/components/Modal_Me';
+import { Modal_Me } from './../common/components/Modal_Me';
 
 
 
 export const Footer = () => {
+    const handleClickInfo = async () => {
+        console.log('me presionaron')
 
+    }
     return (
         <>
 
@@ -16,19 +19,20 @@ export const Footer = () => {
                         <div className="container">
                             <div className="row">
                                 <div    className="col-8" 
-                                        style={{textAlign: "end;"}}>
+                                        style={{textAlign: "end"}}>
+                                   
                                 </div>
                                 <div className="col-1"></div>
                                 <div    className="col-3 " 
-                                        style={{textAlign: "end;"}}>
+                                        style={{textAlign: "end"}}>
                                     <div className="collapse navbar-collapse" id="navbarNav">
                                         <ul className="navbar-nav">
                                             <li className="nav-item">
-                                                <a  className="nav-link active" 
-                                                    style={{color: "#26327e;"},{fontSize: "22px;"}} 
-                                                    ariaCurrent="page"
+                                                <button  className="nav-link active" 
+                                                    style={{color: "#26327e;"},{fontSize: "22px"}} 
+                                                    aria-current="page"
                                                     href="#" data-bs-toggle="modal" data-bs-target="#Info">
-                                                INFO</a>
+                                                About Me</button>
                                             </li>
                                         </ul>
                                     </div>
@@ -44,7 +48,8 @@ export const Footer = () => {
                 </nav>
             </footer>
 
-        <Modal_Me/>
+           <Modal_Me/>
+
         </>
     )
 }
