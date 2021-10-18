@@ -11,13 +11,7 @@ export const Ronda1 = () => {
             <div className="row rounded justify-content-med-center paddingcentro" style={{ fontSize: "30px" }}>
                 <p>Primera Ronda</p>
                 <p>Pregunta</p>
-                {/* <p>{primerPregunta.cuestionario}</p> */}
-
-                {/* <primerPregunta/> */}
-                <div clasName="text-aling-center">
-
-                <CargarPreguntasUno/>
-                </div>
+                              <CargarPreguntasUno/>
                 <div className="buton-center">
                     <NavLink exact to='/Puntaje' className="btn btn-warning" data-bs-toggle="modal" data-bs-target="#Retirarme">
                         Retirarme

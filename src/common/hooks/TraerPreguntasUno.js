@@ -36,15 +36,11 @@ export const CargarPreguntasUno = () => {
                 <div clasName="container">
                     <div clasName="row">
                         <div className="col-12 ">
-                           <Participante/>
-                           
+                           {/* <Participante/> */}
                             <NavLink exact to='/2da-Ronda' className="btn btn-warning buton-resp" id="btnRespuesta" onClick={()=>contador++}>
                                 {console.log('puntos',contador)}
                                 {unaPregunta.respuesta}
-                                
                             </NavLink>
-
-
                             <NavLink exact to='/erroneo' className="btn btn-warning buton-resp" >
                                 {unaPregunta.erronea1}
                             </NavLink>
