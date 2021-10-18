@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import { Modal_Retirarme } from '../common/components/Retirar'
 import { CargarPreguntasUno } from '../common/hooks/TraerPreguntasUno'
 import primerPregunta, { CargarPreguntas } from './../common/components/Ronda1'
 
@@ -18,11 +19,12 @@ export const Ronda1 = () => {
                 <CargarPreguntasUno/>
                 </div>
                 <div className="buton-center">
-                    <NavLink exact to='/2da-Ronda' className="btn btn-warning" >
-                        Ronda 2
+                    <NavLink exact to='/Puntaje' className="btn btn-warning" data-bs-toggle="modal" data-bs-target="#Retirarme">
+                        Retirarme
                     </NavLink>
                 </div>
             </div>
+            <Modal_Retirarme puntos="Cero"/>
         </div>
     )
 }

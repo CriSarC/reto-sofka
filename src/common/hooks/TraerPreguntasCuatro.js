@@ -45,11 +45,11 @@ export const CargarPreguntasCuatro = () => {
                 <div clasName="container">
                     <div clasName="row">
                         <div className="col-12 ">
-                            <NavLink exact to='/Correcto' className="btn btn-warning buton-resp" >
-                                {unaPregunta.respuesta}
-                            </NavLink>
                             <NavLink exact to='/erroneo' className="btn btn-warning buton-resp" >
                                 {unaPregunta.erronea1}
+                            </NavLink>
+                            <NavLink exact to='/5ta-Ronda' className="btn btn-warning buton-resp" >
+                                {unaPregunta.respuesta}
                             </NavLink>
                         </div>
                         <div className="col-12">

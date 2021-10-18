@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 
+
 import './../../css/style.css';
 
 import { consultarDatabase } from './../../config/firebase';
+import { Participante } from '../components/Participante';
+var preguntaUna;
+var contador;
 export const CargarPreguntasUno = () => {
     const [listaPreguntasUno, setListaPreguntas] = useState([])
     const [unaPregunta, setUnaPregunta] = useState([]);
@@ -20,7 +24,7 @@ export const CargarPreguntasUno = () => {
         const respuestas = unPreg.respuesta
         console.log('respuestas 1 ', respuestas)
         console.log("preguntas ", preguntas)
-        var preg = preguntas
+        preguntaUna = unaPregunta
     }
     useEffect(() => {
         consultarPreguntasUno()
@@ -32,9 +36,15 @@ export const CargarPreguntasUno = () => {
                 <div clasName="container">
                     <div clasName="row">
                         <div className="col-12 ">
-                            <NavLink exact to='/Correcto' className="btn btn-warning buton-resp" >
+                           <Participante/>
+                           
+                            <NavLink exact to='/2da-Ronda' className="btn btn-warning buton-resp" id="btnRespuesta" onClick={()=>contador++}>
+                                {console.log('puntos',contador)}
                                 {unaPregunta.respuesta}
+                                
                             </NavLink>
+
+
                             <NavLink exact to='/erroneo' className="btn btn-warning buton-resp" >
                                 {unaPregunta.erronea1}
                             </NavLink>

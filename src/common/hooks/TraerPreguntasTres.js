@@ -44,16 +44,16 @@ export const CargarPreguntasTres = () => {
                 <div clasName="container">
                     <div clasName="row">
                         <div className="col-12 ">
-                            <NavLink exact to='/Correcto' className="btn btn-warning buton-resp" >
-                                {unaPregunta.respuesta}
+                            <NavLink exact to='/erroneo' className="btn btn-warning buton-resp" >
+                                {unaPregunta.erronea2}
                             </NavLink>
                             <NavLink exact to='/erroneo' className="btn btn-warning buton-resp" >
                                 {unaPregunta.erronea1}
                             </NavLink>
                         </div>
                         <div className="col-12">
-                            <NavLink exact to='/erroneo' className="btn btn-warning buton-resp" >
-                                {unaPregunta.erronea2}
+                            <NavLink exact to='/4ta-Ronda' className="btn btn-warning buton-resp" >
+                                {unaPregunta.respuesta}
                             </NavLink>
                             <NavLink exact to='/erroneo' className="btn btn-warning buton-resp" >
                                 {unaPregunta.erronea3}

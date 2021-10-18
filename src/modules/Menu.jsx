@@ -19,9 +19,7 @@ export const Menu = ({ titulo }) => {
                         </NavLink>
                     </div>
                     <div className="col-3">
-                        <NavLink exact to='/Puntajes' className="btn btn-warning buton-menu" >
-                            Documentación
-                        </NavLink>
+                    <input id="nombreJugador" placeholder="ingresa tu Nombre"/>
                     </div>
                     <div className="col-3">
                         <ManejadorRondas />

@@ -39,8 +39,8 @@ export const CargarPreguntasDos = () => {
                 <div clasName="container">
                     <div clasName="row">
                         <div className="col-12 ">
-                            <NavLink exact to='/Correcto' className="btn btn-warning buton-resp" >
-                                {unaPregunta.respuesta}
+                            <NavLink exact to='/erroneo' className="btn btn-warning buton-resp" >
+                                {unaPregunta.erronea3}
                             </NavLink>
                             <NavLink exact to='/erroneo' className="btn btn-warning buton-resp" >
                                 {unaPregunta.erronea1}
@@ -50,8 +50,8 @@ export const CargarPreguntasDos = () => {
                             <NavLink exact to='/erroneo' className="btn btn-warning buton-resp" >
                                 {unaPregunta.erronea2}
                             </NavLink>
-                            <NavLink exact to='/erroneo' className="btn btn-warning buton-resp" >
-                                {unaPregunta.erronea3}
+                            <NavLink exact to='/3ra-Ronda' className="btn btn-warning buton-resp" >
+                                {unaPregunta.respuesta}
                             </NavLink>
                         </div>
                     </div>

@@ -3,6 +3,8 @@ import { NavLink } from 'react-router-dom'
 import React, { useEffect, useState } from 'react'
 
 import { consultarDatabase } from './../../config/firebase';
+
+
 export const CargarPreguntasCinco = () => {
    
     
@@ -40,16 +42,16 @@ export const CargarPreguntasCinco = () => {
                 <div clasName="container">
                     <div clasName="row">
                         <div className="col-12 ">
-                            <NavLink exact to='/Correcto' className="btn btn-warning buton-resp" >
-                                {unaPregunta.respuesta}
-                            </NavLink>
                             <NavLink exact to='/erroneo' className="btn btn-warning buton-resp" >
                                 {unaPregunta.erronea1}
                             </NavLink>
-                        </div>
-                        <div className="col-12">
                             <NavLink exact to='/erroneo' className="btn btn-warning buton-resp" >
                                 {unaPregunta.erronea2}
+                            </NavLink>
+                        </div>
+                        <div className="col-12">
+                            <NavLink exact to='/Puntajes' className="btn btn-warning buton-resp" >
+                                {unaPregunta.respuesta}
                             </NavLink>
                             <NavLink exact to='/erroneo' className="btn btn-warning buton-resp" >
                                 {unaPregunta.erronea3}
