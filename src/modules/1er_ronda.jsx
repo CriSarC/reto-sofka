@@ -13,8 +13,10 @@ export const Ronda1 = () => {
                 {/* <p>{primerPregunta.cuestionario}</p> */}
 
                 {/* <primerPregunta/> */}
-                
+                <div clasName="text-aling-center">
+
                 <CargarPreguntasUno/>
+                </div>
                 <div className="buton-center">
                     <NavLink exact to='/2da-Ronda' className="btn btn-warning" >
                         Ronda 2
