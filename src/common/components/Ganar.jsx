@@ -7,7 +7,7 @@ import {
     Route,
     Switch
 } from 'react-router-dom'
-import { Puntajes } from './../../modules/Puntaje_jugador'
+import { Puntajes } from './../../modules/puntaje_jugador'
 
 
 export const Modal_Ganar = ({ puntos }) => {
