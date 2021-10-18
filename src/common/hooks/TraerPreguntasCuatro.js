@@ -3,14 +3,14 @@ import { RANDOM_FACTOR } from '@firebase/util';
 import React, { useEffect, useState } from 'react'
 
 import { consultarDatabase } from './../../config/firebase';
-export const CargarPreguntasUno = () => {
+export const CargarPreguntasCuatro = () => {
    
     
     const [listaPreguntasUno, setListaPreguntas] = useState([])
     const [unaPregunta, setUnaPregunta] = useState([]);
     console.log('unaPregunta ',setUnaPregunta)
     const consultarPreguntasUno = async () => {
-        const listaTemporal = await consultarDatabase('preguntas_uno') //trae info database
+        const listaTemporal = await consultarDatabase('preguntas_cuatro') //trae info database
         setListaPreguntas(listaTemporal)
         console.log(listaTemporal)
         const unPreg = listaTemporal[Math.floor(Math.random() * listaTemporal.length)]

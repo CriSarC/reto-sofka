@@ -10,7 +10,9 @@ export const Ronda1 = () => {
             <div className="row rounded justify-content-med-center paddingcentro" style={{ fontSize: "30px" }}>
                 <p>Primera Ronda</p>
                 <p>Pregunta</p>
-                <p>{primerPregunta.cuestionario}</p>
+                {/* <p>{primerPregunta.cuestionario}</p> */}
+
+                {/* <primerPregunta/> */}
                 
                 <CargarPreguntasUno/>
                 <div className="buton-center">

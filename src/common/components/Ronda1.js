@@ -1,10 +1,9 @@
 
-import React, { useEffect, useState } from 'react'
 import Pregunta from './ClasePreguntas'
-import { consultarDatabase } from './../../config/firebase';
+import { CargarPreguntasUno } from '../hooks/TraerPreguntasUno';
 
 console.log('clase Ronda Uno Cargada')
-class RondaUno extends Pregunta {
+export class RondaUno extends Pregunta {
     constructor(cantidad, premio, cuestionario) {
         super(cantidad, premio)
         this.cuestionario = cuestionario;
@@ -12,38 +11,27 @@ class RondaUno extends Pregunta {
     recompenza(multiplicador) {
         console.log(`Recompenza: ${this.premio * multiplicador}`)
     }
-    //  cuestion(cuestionario){
-    //     console.log(`pregunta: ${this.cuestionario}`)
-    //     console.log(`cantidad: ${this.cantidad}`)
-    //     console.log(`premio: ${this.premio}`)
+    cuestion(cuestionario) {
+        console.log(`pregunta: ${this.cuestionario}`)
+        console.log(`cantidad: ${this.cantidad}`)
+        console.log(`premio: ${this.premio}`)
 
 
-    // }
 
-}
+        }
+    }
+    // return(
 
-export const CargarPreguntas = () =>{
-
-const [listaPreguntasUno, setListaPreguntas] = useState([])
-const consultarPreguntasUno = async () => {
-    const listaTemporal = await consultarDatabase('preguntas_uno') //trae info database
-    setListaPreguntas(listaTemporal)
-    console.log(listaTemporal)
-
-}
-useEffect(() => {
-    consultarPreguntasUno()
-
-}, [])
-
-return(
-<>
-</>
-)
-}
+    // <CargarPreguntasUno/>
+    // )
 
 
-let primerPregunta = new RondaUno(9, 2, 'nombre?');
+    const PrimerPregunta = CargarPreguntasUno.preg
+    
+    console.log("traida ",PrimerPregunta)
+    const PrimerRespuesta = CargarPreguntasUno.respuestas
+
+let primerPregunta = new RondaUno(9, 2, "PrimerPregunta");
 primerPregunta.recompenza(2)
 // primerpregunta.cuestion()
 
