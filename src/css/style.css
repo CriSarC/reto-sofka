@@ -45,7 +45,6 @@ div.capa{
     color: white;
 }
 
-
 header{
     width: 90%;
     /* max-width: 1000px; */
@@ -67,7 +66,6 @@ footer{
     bottom: 0px;
 }
 
-
 .form-add-user{
     margin: 10px;
     max-width: 90%; 
@@ -81,7 +79,6 @@ footer{
     background-color: #7e5f26;
     margin-bottom: 60px;
 }
-
 
 .abs-center{
   /* display: flex;
@@ -149,41 +146,18 @@ footer{
     }
  }
 
-
  .btnLogin{
   width: 100%; 
   margin-top: 10px;
   
  }
 
- /* ul{
-    display: flex;
-    margin: 2rem 0;
-  } */
-  
- /*  li{
-    list-style-type: none;
-  }
-   */
-/*   a{
-    padding:1rem;
-    margin: 0 0.2rem;
-    background-color: beige;
-    color:darksalmon;
-  text-decoration: none;
-  font-size: 1.5rem;
-  } */
-  
-/*   .active{
-    background-color: darksalmon;
-    color:beige;
-  } */
-
   .buton-menu{
       margin:20px;
       margin-left:100px;
       width: 50%; 
   }
+  
   .buton-resp{
     margin: 10px 50px; 
    

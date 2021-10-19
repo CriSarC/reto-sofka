@@ -3,9 +3,6 @@ import '../css/style.css';
 import { Modal_Me } from './../common/components/Modal_Me';
 
 export const Footer = () => {
-    const handleClickInfo = async () => {
-        console.log('me presionaron')
-    }
     return (
         <>
             <footer>
@@ -13,21 +10,21 @@ export const Footer = () => {
                     <div className="container-fluid">
                         <div className="container">
                             <div className="row">
-                                <div    className="col-8" 
-                                        style={{fontSize: "30px"}}>
+                                <div className="col-8"
+                                    style={{ fontSize: "30px" }}>
                                     <p>Cristian Sarmiento:&nbsp;&nbsp;sarmientocastrocris@gmail.com</p>
                                 </div>
                                 <div className="col-1"></div>
-                                <div    className="col-3 " 
-                                        style={{textAlign: "end"}}>       
+                                <div className="col-3 "
+                                    style={{ textAlign: "end" }}>
                                     <div className="collapse navbar-collapse" id="navbarNav">
                                         <ul className="navbar-nav">
                                             <li className="nav-item">
-                                                <button  className="nav-link active" 
-                                                    style={{color: "#26327e;"},{fontSize: "22px"}} 
+                                                <button className="nav-link active"
+                                                    style={{ color: "#26327e;" }, { fontSize: "22px" }}
                                                     aria-current="page"
                                                     href="#" data-bs-toggle="modal" data-bs-target="#Info">
-                                                About Me</button>
+                                                    About Me</button>
                                             </li>
                                         </ul>
                                     </div>
@@ -42,7 +39,7 @@ export const Footer = () => {
                     </div>
                 </nav>
             </footer>
-           <Modal_Me/>
+            <Modal_Me />
         </>
     )
 }

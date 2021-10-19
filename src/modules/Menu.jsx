@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import '../css/style.css';
-import { ManejadorRondas } from './ManejadorRondas'
+// import { ManejadorRondas } from './ManejadorRondas'
 
 export const Menu = ({ titulo }) => {
     return (
@@ -18,7 +18,6 @@ export const Menu = ({ titulo }) => {
                             Puntajes
                         </NavLink>
                     </div>
-                    
                     {/* <div className="col-3">
                         <ManejadorRondas />
                     </div> */}

@@ -1,37 +1,18 @@
 import { NavLink } from 'react-router-dom'
-
 import React, { useEffect, useState } from 'react'
-
 import { consultarDatabase } from './../../config/firebase';
+
 export const CargarPreguntasDos = () => {
-
-
-    const [listaPreguntasUno, setListaPreguntas] = useState([])
     const [unaPregunta, setUnaPregunta] = useState([]);
-    console.log('unaPregunta ', setUnaPregunta)
     const consultarPreguntasUno = async () => {
         const listaTemporal = await consultarDatabase('preguntas_dos') //trae info database
-        setListaPreguntas(listaTemporal)
         console.log(listaTemporal)
         const unPreg = listaTemporal[Math.floor(Math.random() * listaTemporal.length)]
-        console.log('Unpreg', unPreg)
         setUnaPregunta(unPreg)
-        const preguntas = unPreg.pregunta
-        console.log('preguntas 1 ', preguntas)
-        const respuestas = unPreg.respuesta
-        console.log('respuestas 1 ', respuestas)
-
-        console.log("preguntas ", preguntas)
-        var preg = preguntas
     }
-
     useEffect(() => {
         consultarPreguntasUno()
     }, [])
-
-
-    // let setUnaPregunta = listaPreguntasUno[Math.floor(Math.random()*listaPreguntasUno.length)];
-
     return (
         <>
             <label>{unaPregunta.pregunta}</label>

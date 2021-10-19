@@ -3,7 +3,6 @@ import React from 'react'
 export const Modal_Me = () => {
     return (
         <>
-
             <div className="modal fade" id="Info" tabindex="-1">
                 <div className="modal-dialog modal-dialog-centered">
                     <div className="modal-content">
@@ -23,16 +22,12 @@ export const Modal_Me = () => {
                                 de plataformas de Cloud Service como Azure y el uso de herramientas que permitan realizar
                                 integración continua como Jenkins o CircleCi, en general muy interesado por el mundo DevOps
                                 y el desarrollo ágil!<br/>
-
                                 Espero que te guste esta página la cual hace parte del reto Sofka, en la cual se desarrolla 
                                 un juego de preguntas y respuestas!
-
                             </p>
-
                         </div>
                         <div className="modal-footer">
                             <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-
                         </div>
                     </div>
                 </div>

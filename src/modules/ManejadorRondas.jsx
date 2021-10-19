@@ -1,5 +1,8 @@
-import React, { Component } from 'react';
 
+// *************************************************
+// Este Script fue diceñado para realizar el desarrollo
+
+import React  from 'react';
 import { NavLink } from 'react-router-dom'
 import './../css/style.css';
 
@@ -7,7 +10,6 @@ export const ManejadorRondas = () => {
   
     return (
         <>
-
             <NavLink exact to='/1ra-Ronda' className="btn btn-warning " >
                 Ronda 1
             </NavLink>
