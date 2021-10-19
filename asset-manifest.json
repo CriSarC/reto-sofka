@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/reto-sofka/static/css/main.8fa9b716.chunk.css",
+    "main.js": "/reto-sofka/static/js/main.05070db1.chunk.js",
+    "main.js.map": "/reto-sofka/static/js/main.05070db1.chunk.js.map",
+    "runtime-main.js": "/reto-sofka/static/js/runtime-main.d80b98e0.js",
+    "runtime-main.js.map": "/reto-sofka/static/js/runtime-main.d80b98e0.js.map",
+    "static/js/2.d844cb6b.chunk.js": "/reto-sofka/static/js/2.d844cb6b.chunk.js",
+    "static/js/2.d844cb6b.chunk.js.map": "/reto-sofka/static/js/2.d844cb6b.chunk.js.map",
+    "index.html": "/reto-sofka/index.html",
+    "precache-manifest.300f20df6af126148a277e376a8f4c3c.js": "/reto-sofka/precache-manifest.300f20df6af126148a277e376a8f4c3c.js",
+    "service-worker.js": "/reto-sofka/service-worker.js",
+    "static/css/main.8fa9b716.chunk.css.map": "/reto-sofka/static/css/main.8fa9b716.chunk.css.map",
+    "static/js/2.d844cb6b.chunk.js.LICENSE.txt": "/reto-sofka/static/js/2.d844cb6b.chunk.js.LICENSE.txt",
+    "static/media/style.css": "/reto-sofka/static/media/pexels-prince-lakra-9186464.aa8c631f.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d80b98e0.js",
+    "static/js/2.d844cb6b.chunk.js",
+    "static/css/main.8fa9b716.chunk.css",
+    "static/js/main.05070db1.chunk.js"
+  ]
+}
